@@ -26,7 +26,7 @@ const Header = () => {
         <Nav className='ml-auto'>
               <LinkContainer to='/cart'>
                 <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i> Cart
+                  <i className='fas fa-shopping-cart'></i>Cart
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -39,20 +39,13 @@ const Header = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (
-                <LinkContainer to='/login'>
-                  <Nav.Link>
-                    <i className='fas fa-user'></i>Login
-                  </Nav.Link>
-                </LinkContainer>
-                
-                <LinkContainer to='/register'>
+            <LinkContainer to='register?redirect=/'>
                   <Nav.Link>
                     <i className='fas fa-user'></i>Register
                   </Nav.Link>
                 </LinkContainer>
-                
-                
-              )}
+            
+            )}
               {userInfo && userInfo.isAdmin && (
                 <NavDropdown title='Admin' id='adminmenu'>
                   <LinkContainer to='/admin/userlist'>
