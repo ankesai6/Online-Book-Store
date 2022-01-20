@@ -21,15 +21,7 @@ const HomeScreen = () => {
   
     return (
         <>
-       <Meta />
-      {!keyword ? (
-        <ProductCarousel />
-      ) : (
-        <Link to="/" className="btn btn-white">
-          Go Back
-        </Link>
-      )}
-       h1>Latest Products</h1
+       <h1>Latest Products</h1>
         {loading ? (
           <Loader/>
         ) : error ? (
