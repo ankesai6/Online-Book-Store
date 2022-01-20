@@ -19,7 +19,7 @@ const Header = () => {
         <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect >
         <Container>
         <LinkContainer to='/'>
-        <Navbar.Brand>BookCatalog</Navbar.Brand>
+        <Navbar.Brand>Bookisfy</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
@@ -41,7 +41,7 @@ const Header = () => {
               ) : (
                 <LinkContainer to='/login'>
                   <Nav.Link>
-                    <i className='fas fa-user'></i> Sign In
+                    <i className='fas fa-user'></i>Register
                   </Nav.Link>
                 </LinkContainer>
               )}
