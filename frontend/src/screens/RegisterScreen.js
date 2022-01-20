@@ -39,25 +39,35 @@ const RegisterScreen = ({ location, history }) => {
   return (
     <FormContainer>
       <h1>Sign Up</h1>
-      {message && <Message variant='danger'>{message}</Message>}
-      {error && <Message variant='danger'>{error}</Message>}
+      {message && <Message variant='primary'>{message}</Message>}
+      {error && <Message variant='primary'>{error}</Message>}
       {loading && <Loader />}
       <Form onSubmit={submitHandler}>
         <Form.Group controlId='name'>
           <Form.Label>Name</Form.Label>
           <Form.Control
             type='name'
-            placeholder='Enter name'
+            placeholder='Enter Your Name'
             value={name}
             onChange={(e) => setName(e.target.value)}
           ></Form.Control>
         </Form.Group>
+       
+       <Form.Group controlId='mobile'>
+          <Form.Label>Mobile</Form.Label>
+          <Form.Control
+            type='mobile'
+            placeholder='Enter Your Mobile No'
+            value={number}
+            onChange={(e) => setMobile(e.target.value)}
+          ></Form.Control>
+        </Form.Group>
 
         <Form.Group controlId='email'>
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control
             type='email'
-            placeholder='Enter email'
+            placeholder='Enter Your Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           ></Form.Control>
@@ -67,7 +77,7 @@ const RegisterScreen = ({ location, history }) => {
           <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Enter password'
+            placeholder='Enter Your Password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
