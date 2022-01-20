@@ -53,16 +53,6 @@ const RegisterScreen = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
        
-       <Form.Group controlId='mobile'>
-          <Form.Label>Mobile</Form.Label>
-          <Form.Control
-            type='mobile'
-            placeholder='Enter Your Mobile No'
-            value={number}
-            onChange={(e) => setMobile(e.target.value)}
-          ></Form.Control>
-        </Form.Group>
-
         <Form.Group controlId='email'>
           <Form.Label>Email</Form.Label>
           <Form.Control
